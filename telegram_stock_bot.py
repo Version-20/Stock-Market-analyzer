@@ -26,9 +26,7 @@ UPDATE_INTERVAL = int(os.getenv("UPDATE_INTERVAL", "3600"))  # seconds between f
 TIMEFRAME = os.getenv("TIMEFRAME", "hour").lower()
 
 # Display name -> Yahoo Finance ticker.
-# ⚠️ VERIFY EACH ONE with verify_symbols.py before trusting the bot's output.
-# XAUUSD uses gold futures (GC=F) as the closest free proxy for spot gold.
-# XAUAUD is NOT a standard Yahoo ticker — included as a guess, likely to fail.
+
 SYMBOLS = {
     "EURUSD": "EURUSD=X",
     "AUDUSD": "AUDUSD=X",
